@@ -79,3 +79,42 @@ campoNumero.addEventListener("input", function () {
             "Número inválido! Escolha um número de 1 a 6.";
     }
 });
+
+// 3. GERAÇÃO DINÂMICA DA IMAGEM
+
+function gerarPrevia() {
+    const areaPrevia = document.getElementById("area-previa");
+
+    // Verifica se a imagem já existe no HTML.
+
+    if (document.getElementById("imagem-livro")) {
+        alert("A prévia do livro já foi gerada!");
+        return;
+    }
+
+    // Cria dinamicamente um elemento de imagem.
+
+    const imagem = document.createElement("img");
+
+    imagem.id = "imagem-livro";
+
+    imagem.src =
+        "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=80";
+
+    imagem.alt = "Prévia ilustrativa de um livro de programação";
+
+    // Cria o título da prévia.
+
+    const titulo = document.createElement("h3");
+
+    titulo.textContent = "Livro de Programação";
+
+    // Limpa a mensagem inicial.
+
+    areaPrevia.innerHTML = "";
+
+    // Adiciona o título e a imagem ao DOM.
+
+    areaPrevia.appendChild(titulo);
+    areaPrevia.appendChild(imagem);
+}
