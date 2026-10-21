@@ -189,3 +189,40 @@ main button:focus-visible {
 #resultado strong {
     color: var(--cor-primaria);
 }
+
+/*6. GERAÇÃO DINAMICA DE IMAGEM, PRÉVIA DO LIVRO */
+
+#previa {
+    background-color: var(--cor-card);
+    padding: 25px;
+    border-radius: var(--raio-borda);
+    border: 1px solid var(--cor-borda);
+}
+
+#previa > p {
+    color: var(--cor-texto-secundario);
+    line-height: 1.6;
+}
+
+#area-previa {
+    margin-top: 20px;
+}
+
+#area-previa h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+}
+
+#area-previa img {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    border-radius: var(--raio-borda);
+    margin-top: 15px;
+    border: 2px solid var(--cor-primaria);
+}
+
+.mensagem {
+    color: var(--cor-texto-suave);
+    margin-top: 12px;
+}
