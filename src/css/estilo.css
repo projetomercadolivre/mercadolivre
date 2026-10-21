@@ -1,0 +1,134 @@
+:root {
+    /* Fundos */
+    --cor-fundo: #10131a;
+    --cor-card: #1b2230;
+    --cor-header: #171c27;
+    --cor-fundo-input: #10131a;
+    --cor-fundo-resultado: #101925;
+
+    /* Cores principais */
+    --cor-primaria: #38bdf8;
+    --cor-botao: #0284c7;
+    --cor-botao-hover: #0369a1;
+    --cor-sucesso: #4ade80;
+
+    /* Textos */
+    --cor-texto: #f1f5f9;
+    --cor-texto-secundario: #b5c0d0;
+    --cor-texto-suave: #aab5c5;
+
+    /* Bordas e efeitos */
+    --cor-borda: #303b4d;
+    --cor-borda-input: #475569;
+    --cor-borda-hover: #38bdf8;
+    --sombra-card: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    /* Formatação */
+    --raio-borda: 12px;
+    --raio-borda-pequeno: 6px;
+    --transicao-padrao: 0.3s ease;
+}
+
+ main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+main h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+}
+
+
+/*3. CARDS DE PRODUTOS */
+
+#cards {
+    margin-bottom: 50px;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-borda);
+    overflow: hidden;
+    box-shadow: var(--sombra-card);
+    transition:
+        transform var(--transicao-padrao),
+        border-color var(--transicao-padrao);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--cor-borda-hover);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-conteudo {
+    padding: 18px;
+}
+
+.categoria {
+    color: var(--cor-primaria);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card h3 {
+    color: var(--cor-texto);
+    margin: 10px 0;
+}
+
+.card p {
+    color: var(--cor-texto-secundario);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.preco {
+    color: var(--cor-sucesso);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* 4. BOTÕES DOS CARDS */
+
+.botao-card {
+    width: 100%;
+}
+
+main button {
+    background-color: var(--cor-botao);
+    color: var(--cor-texto);
+    border: none;
+    padding: 11px 15px;
+    border-radius: var(--raio-borda-pequeno);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color var(--transicao-padrao);
+}
+
+main button:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+main button:focus-visible {
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: 3px;
+}
