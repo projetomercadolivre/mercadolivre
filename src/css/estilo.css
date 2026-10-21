@@ -226,3 +226,24 @@ main button:focus-visible {
     color: var(--cor-texto-suave);
     margin-top: 12px;
 }
+
+/*8. RESPONSIVIDADE*/
+
+@media (max-width: 600px) {
+    main {
+        padding: 20px 12px;
+    }
+
+    .grade-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogo,
+    #previa {
+        padding: 18px;
+    }
+
+    .catalogo input {
+        max-width: 100%;
+    }
+}
