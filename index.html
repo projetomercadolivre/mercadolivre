@@ -7,6 +7,40 @@
     <title>Document</title>
 </head>
 <body>
+        <header id="topo">
+            <div id="logo">
+                <a href="#">
+                    <img src="src/assets/logo.jpeg" alt="Logo Mercado Livro">
+                </a>
+            </div>
+
+            <button id="botao-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+            <!-- Área de busca -->
+            <search id="busca">
+                <form role="search">
+                    <input type="text" id="busca-input" placeholder="Digite sua busca">
+                </form>
+            </search>
+
+            
+
+            <nav id="menu">
+                <a href="#">Crie sua Conta</a>
+                <a href="#">Entre</a>
+                <a href="#">Compras</a>
+                <a href="#" label="Carrinho de compras">
+                    <img src="./src/assets/carrinho.png" alt="Ícone do carrinho">
+                </a>
+
+                <!-- Botão de Alternância de Tema (Dark/Light) -->
+                <div class="theme">
+                    <input type="checkbox" id="dark" class="check">
+                    <label for="dark" class="theme-label" title="Alternar tema"><img src="./src/assets/darkMode.png"></label>
+                </div>
+            </nav>
+        </header>
+    
     <script src="./src/js/script.js"></script>
 </body>
 </html>
