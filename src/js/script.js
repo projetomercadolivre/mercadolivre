@@ -22,4 +22,4 @@ function alternarImagem() {
 }
 
 
-setInterval(alternarImagem, 3000);
+setInterval(alternarImagem, 5000);
