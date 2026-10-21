@@ -1,3 +1,4 @@
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -75,4 +76,27 @@ img { max-width: 100%; }
     #menu { justify-content: center; gap: 10px; }
     #menu a { font-size: 13px; }
     #logo img { height: 40px; }
+}
+
+#botao-menu {
+    display: none;
+    background: none;
+    border: 1px solid var(--cor-borda-input);
+    color: var(--cor-texto);
+    font-size: 24px;
+    padding: 4px 12px;
+    border-radius: var(--raio-borda-pequeno);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #botao-menu { display: block; }
+
+    #menu { display: none; }
+    #menu.aberto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 }
