@@ -132,3 +132,60 @@ main button:focus-visible {
     outline: 2px solid var(--cor-primaria);
     outline-offset: 3px;
 }
+
+/*5. CATÁLOGO DE LANÇAMENTOS*/
+
+#lancamentos {
+    margin-bottom: 50px;
+}
+
+.catalogo {
+    background-color: var(--cor-card);
+    padding: 25px;
+    border-radius: var(--raio-borda);
+    border: 1px solid var(--cor-borda);
+}
+
+.catalogo label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--cor-texto);
+}
+
+.instrucoes {
+    color: var(--cor-texto-suave);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.catalogo input {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-borda-pequeno);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.catalogo input:focus {
+    outline: 2px solid var(--cor-primaria);
+}
+
+#resultado {
+    margin-top: 15px;
+    padding: 18px;
+    background-color: var(--cor-fundo-resultado);
+    border-left: 4px solid var(--cor-primaria);
+    border-radius: var(--raio-borda-pequeno);
+    color: var(--cor-texto);
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+#resultado strong {
+    color: var(--cor-primaria);
+}
